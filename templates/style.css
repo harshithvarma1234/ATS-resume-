@@ -1,0 +1,108 @@
+/* Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #3b5bfd;
+    --success: #16a34a;
+    --warning: #f59e0b;
+    --error: #dc2626;
+    --border: #e5e7eb;
+}
+
+body {
+    font-family: system-ui, sans-serif;
+    background: #f5f7fb;
+}
+
+.container {
+    width: min(1100px, 90%);
+    margin: auto;
+}
+
+/* Hero */
+.hero {
+    background: linear-gradient(135deg, #3b5bfd, #5f7cff);
+    color: #fff;
+    padding: 70px 0;
+    text-align: center;
+}
+
+/* Card */
+.card {
+    background: #fff;
+    padding: 24px;
+    border-radius: 14px;
+    margin: 28px 0;
+    box-shadow: 0 10px 25px rgba(0,0,0,.05);
+}
+
+/* Upload */
+.upload-box {
+    border: 2px dashed var(--border);
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.upload-box.dragover {
+    border-color: var(--primary);
+    background: #eef2ff;
+}
+
+.upload-box input {
+    display: none;
+}
+
+/* Button */
+.btn-primary {
+    background: var(--primary);
+    color: white;
+    border: none;
+    padding: 14px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn-primary:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* Score */
+.score-circle {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: white;
+    margin: auto;
+}
+
+/* Insights */
+.insights-list li {
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.success { background: #ecfdf5; color: var(--success); }
+.warning { background: #fffbeb; color: var(--warning); }
+.error { background: #fef2f2; color: var(--error); }
+
+.hidden {
+    display: none;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #666;
+}
